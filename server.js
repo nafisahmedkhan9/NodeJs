@@ -3,7 +3,7 @@ var request = require("request");
 var app = express();
 var PORT = process.env.PORT || 3000;
 //var inputid = parseInt(req.params.id) ;
-app.get('/abcd', function(req, res) {
+app.get('/', function(req, res) {
 	var queryParams = req.query;
 	console.log("queryParams : " + JSON.stringify(queryParams));
 	var longUrl = encodeURI(queryParams.longUrl);
