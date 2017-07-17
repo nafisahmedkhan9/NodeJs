@@ -15,7 +15,6 @@ app.get('/', function(req, res) {
 		console.log("End.....");
 	});
 });
-
 function bitlyurl(URL, callback) {
 	var options = {
 		url: 'https://api-ssl.bitly.com/v3/shorten',
@@ -36,7 +35,6 @@ function bitlyurl(URL, callback) {
 				console.log("Bitlyurl URL inside function : " + resp.data.url);
 				callback(resp.data.url);
 			}
-
 		}
 	});
 }

@@ -8,7 +8,6 @@ var options = {
     access_token: 'ea23cf151e923390bc763648089f8ddaf0faaec1'
   },
 };
-
 request(options, function(error, response, body) {
   if (error) {
     return console.log("error : " + error);
